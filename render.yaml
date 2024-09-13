@@ -1,13 +1,12 @@
 # render.yaml
 services:
-  - name: youtube-tracker-cron
-    type: cron
+  - type: cron
+    name: youtube-tracker-cron
     schedule: "30 20 * * *"  # Runs at 20:30 UTC daily
-    command: "python3 app.py"
     env: python
-    runtime: python3.9
-    buildCommand: "pip install -r requirements.txt"
-    repo: https://github.com/PsaAI/youtube_tracker  # Replace with your GitHub repo URL
+    buildCommand: pip install -r requirements.txt
+    startCommand: python3 app.py
+    repo: https://github.com/yourusername/youtube_tracker  # Replace with your GitHub repo URL
     envVars:
       - key: DATABASE_URL
         fromDatabase:
