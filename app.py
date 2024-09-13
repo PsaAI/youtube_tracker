@@ -13,8 +13,8 @@ logging.basicConfig(level=logging.INFO)
 
 # List of YouTube channel IDs to track
 channel_ids = [
-    'UC_x5XG1OV2P6uZZ5FSM9Ttw',  # Google Developers
-    'UCVHFbqXqoYvEWM1Ddxl0QDg',  # Microsoft Developer
+    'UChpleBmo18P08aKCIgti38g',  # Matt Wolfe
+    'UCui4jxDaMb53Gdh-AZUTPAg',  # Liam Ottley
     # Add more channel IDs here
 ]
 
