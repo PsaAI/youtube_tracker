@@ -3,7 +3,7 @@
 services:
   - type: cron
     name: youtube-tracker-cron
-    schedule: "@hourly"  # Runs the script every hour
+    schedule: "30 20 * * *"  # Runs the script every day at 20:30 UTC
     command: "python app.py"
     env: python
     runtime: python3
@@ -19,3 +19,4 @@ services:
     name: youtube-tracker-db
     databaseName: youtube_tracker
     starterPlan: starter  # Use the free tier or upgrade as needed
+
